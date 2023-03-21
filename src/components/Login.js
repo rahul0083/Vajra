@@ -4,7 +4,6 @@ import { updateProfile } from 'firebase/auth';
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { loginuser, selectUser } from './UserSlice';
-import { useNavigate } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 
 
@@ -16,7 +15,7 @@ export default function Login() {
     const [email,setEmail]=useState("");
     const [password,setPassword]=useState("");
     const dispatch=useDispatch();
-    const navitage = useNavigate()
+   
     
 
     const register=(e)=>{

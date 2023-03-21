@@ -4,12 +4,6 @@ import { useDispatch } from 'react-redux';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import { selectUser } from "./UserSlice";
 import { useSelector } from 'react-redux';
-import {
-  BrowserRouter,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 export default function Dropdown() {
 
   const user = useSelector(selectUser);
@@ -25,7 +19,7 @@ export default function Dropdown() {
     <div className="dropdown">
     <button className="dropbtn"><ArrowDropDownIcon /></button>
     <div className="dropdown-content">
-      <Link onClick={signout}>LogOut</Link>
+      <a onClick={signout}>LogOut</a>
     </div>
   </div>
   )

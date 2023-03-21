@@ -9,7 +9,6 @@ import { loginuser, logoutuser, selectUser } from './UserSlice';
 import {useDispatch, useSelector}  from 'react-redux';
 import { auth } from './Firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import {BrowserRouter , Routes, Route} from "react-router-dom";
 import Home from './Home';
 import Dropdown from './Dropdown';
 import firebase from 'firebase';
@@ -48,22 +47,17 @@ useEffect(()=>{
   return (
     <>
 
-<BrowserRouter>
-    { !user?(<Login/>) :(
-      
-        <Routes>
-          <Route exact path="/home" element={<Home /> }>   
-          </Route>
-         
-          <Route exact path="/LinkedIn-Clone---React-Project---ka2hnda6zy0e" element={<Login/> }>   
-          </Route>
 
-        </Routes>
-   
+    { !user?(
+   <Login />
+
+    ) :(
+          <Home />  
+
       )
 
     }
-     </BrowserRouter>
+   
  </>
   )
 }
