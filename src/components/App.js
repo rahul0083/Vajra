@@ -55,7 +55,7 @@ useEffect(()=>{
           <Route exact path="/home" element={<Home /> }>   
           </Route>
          
-          <Route exact path="/login" element={<Login/> }>   
+          <Route exact path="/LinkedIn-Clone---React-Project---ka2hnda6zy0e" element={<Login/> }>   
           </Route>
 
         </Routes>
