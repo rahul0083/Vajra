@@ -1,9 +1,12 @@
 {
+  "homepage": "https://rahul0083.github.io/LinkedIn-Clone---React-Project---ka2hnda6zy0e",
   "name": "react-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "cypress run  --headless --reporter mochawesome",
     "start": "webpack-dev-server --mode development --watch --open --hot --port=3000",
     "build": "webpack --mode production"
@@ -16,6 +19,7 @@
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "@reduxjs/toolkit": "^1.9.3",
+    "gh-pages": "^5.0.0",
     "install": "^0.13.0",
     "npm": "^9.6.1",
     "react": "^16.13.1",

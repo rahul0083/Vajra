@@ -52,7 +52,7 @@ useEffect(()=>{
     { !user?(<Login/>) :(
       
         <Routes>
-          <Route exact path="/" element={<Home /> }>   
+          <Route exact path="/home" element={<Home /> }>   
           </Route>
          
           <Route exact path="/login" element={<Login/> }>   
