@@ -5,14 +5,15 @@ import { getAuth, signInWithCustomToken } from "firebase/auth";
 
 
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBtN0dmAiTkvlhhlEqueG5nwJdLM1-5wSc",
-  authDomain: "vajra-9b913.firebaseapp.com",
-  projectId: "vajra-9b913",
-  storageBucket: "vajra-9b913.appspot.com",
-  messagingSenderId: "458101889219",
-  appId: "1:458101889219:web:c7175c4f63210874e12a76",
-  measurementId: "G-2NGD64H3QF"
+  apiKey: "AIzaSyBTzmvIBc_wWAJiTF-GMZ8WZtuvzr8q21M",
+  authDomain: "vajra-ffcb9.firebaseapp.com",
+  projectId: "vajra-ffcb9",
+  storageBucket: "vajra-ffcb9.appspot.com",
+  messagingSenderId: "224792673854",
+  appId: "1:224792673854:web:b7edee54c32887e5d59b6f",
+  measurementId: "G-BR9LF456SQ"
 };
 
 
