@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "linked-in-clone-a90db"
-  }
+    "default": "vajra-ecaac",
+    "staging": "vajra-ecaac"
+  },
+  "targets": {},
+  "etags": {}
 }

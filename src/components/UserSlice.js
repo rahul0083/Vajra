@@ -11,6 +11,7 @@ export const userSlice = createSlice({
     },
     logoutuser: state => {
       state.user=null
+      
     }
   }
 })

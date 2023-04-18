@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { loginuser, selectUser } from './UserSlice';
 import { useLocation } from 'react-router-dom';
+import { orange } from '@material-ui/core/colors';
 
 
 export default function Login() {
@@ -30,9 +31,7 @@ export default function Login() {
      if(!password){
       return alert("Password is required");
      }
-     if(!photoURL){
-      return alert("PhotoUrl is required");
-     }
+    
       
     
      
@@ -107,39 +106,40 @@ export default function Login() {
   return (
 <>
     
-    <div className='loginscreen'>
-
-        <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png' />
+    <div >
+        <h3 style={{color:"orange",textAlign:"center"}}>Sign in</h3> <hr />
+        <h3 style={{color:"#004F95"}}>Sign in to your account</h3>
      
         {
 
              signUp===true ? (<form onSubmit={register}>
-        
+             
              <input type="text" placeholder='Full Name' value={name} onChange={(e)=>setName(e.target.value)}  />
-             
-             <input type="text" placeholder='Profile picture url' value={photoURL} onChange={(e)=>setPhotoURL(e.target.value)} />
-             
+                <br />        
              <input type="email" placeholder='Email' value={email} onChange={(e)=>setEmail(e.target.value)}  />
-             
+             <br />
              <input type="password" placeholder='Password'value={password} onChange={(e)=>setPassword(e.target.value)}  />
+             <br />
+           
+             <input type="submit" placeholder='Sign Up' value="Sign Up"  />
              
-             <input type="submit" placeholder='Sign Up'   />
-             
-             <h4>Already a member ? <span onClick={e=>setSignUp(false)}>Login Here</span></h4>
+             <h4 style={{textAlign:"center"}}>Already a member ? <span onClick={e=>setSignUp(false)}>Sign in here</span></h4>
              
              
              </form>  ):
              (<form onSubmit={signIn} >
         
-        
+             <label htmlFor="email">Email id</label> <br />
              <input type="email" placeholder='Email'   onChange={(e)=>setEmail(e.target.value)}/>
-             
+             <br />
+             <label htmlFor="password">Password</label> <br />
              <input type="password" placeholder='Password'  onChange={(e)=>setPassword(e.target.value)} />
+             <br />
+             <a href="/" style={{color:"red"}}>Forget Password</a> <br />
+             <input type="submit" placeholder='Sign In' value="Sign in" />
              
-             <input type="submit" placeholder='Sign In' />
              
-             
-             <h4>Not a member ? <span onClick={e=>setSignUp(true)}>Register Here</span></h4>
+             <h4 style={{textAlign:"center"}}>New to Vajra ? <span onClick={e=>setSignUp(true)}>Sign Up Now</span></h4>
              
              
              </form> )
