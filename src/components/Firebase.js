@@ -4,6 +4,7 @@ import 'firebase/auth';
 import { getAuth, signInWithCustomToken } from "firebase/auth";
 
 
+
 const firebaseConfig = {
   apiKey: "AIzaSyBtN0dmAiTkvlhhlEqueG5nwJdLM1-5wSc",
   authDomain: "vajra-9b913.firebaseapp.com",
@@ -19,4 +20,4 @@ const firebaseApp=firebase.initializeApp(firebaseConfig);
 const db=firebaseApp.firestore();
 const auth=firebase.auth();
 
-export {db,auth}
+export {db,auth} 
