@@ -3,14 +3,15 @@ import 'firebase/firestore';
 import 'firebase/auth';
 import { getAuth, signInWithCustomToken } from "firebase/auth";
 
+
 const firebaseConfig = {
-  apiKey: "AIzaSyCbIVgV90rectK1vFBrG_g9sxNcbXJ7au8",
-  authDomain: "vajra-ecaac.firebaseapp.com",
-  projectId: "vajra-ecaac",
-  storageBucket: "vajra-ecaac.appspot.com",
-  messagingSenderId: "1024735740294",
-  appId: "1:1024735740294:web:3804e9fa5b6832548d6c07",
-  measurementId: "G-ZCCXN5WSMB"
+  apiKey: "AIzaSyBtN0dmAiTkvlhhlEqueG5nwJdLM1-5wSc",
+  authDomain: "vajra-9b913.firebaseapp.com",
+  projectId: "vajra-9b913",
+  storageBucket: "vajra-9b913.appspot.com",
+  messagingSenderId: "458101889219",
+  appId: "1:458101889219:web:c7175c4f63210874e12a76",
+  measurementId: "G-2NGD64H3QF"
 };
 
 
